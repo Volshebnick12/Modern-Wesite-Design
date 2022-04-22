@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-srif;
+}
+.banner {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+
+.box {
+    position: relative;
+    background: #131f37;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+}
+
+li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.contentBox {
+    text-align: center;
+}
+.contentBox img {
+    width: 100%;
+}
+
+.contentBox p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #333;
+    background: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn:hover {
+    letter-spacing: 2px;
+}
+
+.sci {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sci h3 {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 1px;
+}
+
+.sci li {
+    font-style: none;
+}
+
+.sci li img {
+    max-width: 30px;
+}
+
+.images {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgBx {
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    background: #4296fc;
+}
+
+.imgBx:nth-child(2) {
+    background: #dda427;
+}
+ 
+.imgBx:nth-child(3) {
+    width: 100%;
+    background: rgb(177, 59, 245);
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .content {
+        padding: 40px;
+        height: 70vh;
+    }
+
+    .sci {
+        right: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .imgBx {
+        width: 100%;
+    }
+}
